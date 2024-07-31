@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Racipe_App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/foodpanda_pink</item>
+        <item name="colorPrimaryVariant">@color/foodpanda_pink</item>
+        <item name="colorSecondary">@color/foodpanda_pink</item>
+        <!-- Customize your dark theme here. -->
+        <!-- You can also define more colors for dark theme if needed -->
+    </style>
+
+    <style name="Theme.Racipe_App" parent="Base.Theme.Racipe_App" />
+</resources>

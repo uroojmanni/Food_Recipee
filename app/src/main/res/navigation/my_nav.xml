@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splash_Fragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.racipe_app.Fragments.HomeFragment"
+        android:label="fragment_home_"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_homeFragment_to_racipieIngridientsFragment"
+            app:destination="@id/racipieIngridientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_Fragment"
+        android:name="com.example.racipe_app.Fragments.Splash_Fragment"
+        android:label="fragment_splash_"
+        tools:layout="@layout/fragment_splash_" >
+        <action
+            android:id="@+id/action_splash_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/racipieIngridientsFragment"
+        android:name="com.example.racipe_app.Fragments.RacipieIngridientsFragment"
+        android:label="fragment_racipie_ingridients_"
+        tools:layout="@layout/fragment_racipie_ingridients_" >
+        <argument
+            android:name="imageid"
+            app:argType="integer" />
+        <argument
+            android:name="text"
+            app:argType="string" />
+    </fragment>
+</navigation>
